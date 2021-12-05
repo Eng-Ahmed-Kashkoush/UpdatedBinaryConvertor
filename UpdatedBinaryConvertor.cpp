@@ -25,7 +25,7 @@ void print(int bin[], int size){
 	for(int i=size-1; i>=0; i--)
 			cout<< bin[i];
 }
-void decimal_to_system(int &AscII, int bin[], int size, int system)
+void decimal_to_bin(int &AscII, int bin[], int size, int system)
 {
 		int counter =0;
 		while(AscII>0)
@@ -46,7 +46,7 @@ void str_to_decimal( char arr[], int size){
 		// make a func that==> stores ints inside the array
 		AscII= (int) arr[i];
 		
-		decimal_to_system(AscII, bin, 8, binary);
+		decimal_to_bin(AscII, bin, 8, binary);
 	
 		
 		cout<<"\n";
